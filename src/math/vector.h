@@ -19,6 +19,8 @@ double dotProduct(vector_t *u, vector_t *v);
 
 void normalizeVector(vector_t *u);
 
+vector_t * vectorCopy(vector_t *u);
+
 void vectorFree(vector_t *u);
 
 #endif
