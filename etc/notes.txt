@@ -1,0 +1,4 @@
+Conventions:
+- var_name
+- funcName
+- filename
