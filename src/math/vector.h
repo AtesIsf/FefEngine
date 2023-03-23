@@ -17,6 +17,8 @@ void vectorScalarMul(vector_t *u, double scalar);
 
 double dotProduct(vector_t *u, vector_t *v);
 
+double vectorMagnitude(vector_t u);
+
 void normalizeVector(vector_t *u);
 
 vector_t * vectorCopy(vector_t *u);

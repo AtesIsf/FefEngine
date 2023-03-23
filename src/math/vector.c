@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <math.h>
+
 #include "vector.h"
 
 vector_t * createVector(int dimensions)
@@ -44,6 +46,14 @@ double dotProduct(vector_t *u, vector_t *v)
         result += u->vals[i] * v->vals[i];
     
     return result;
+}
+
+double vectorMagnitude(vector_t u)
+{
+    double temp = 0;
+    for (int i = 0; i<u.dimensions; i++)
+        temp+=(u.vals[i] * u.vals[i]);
+    return sqrt(temp);
 }
 
 void normalizeVector(vector_t *u)
