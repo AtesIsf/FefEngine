@@ -15,7 +15,9 @@ void vectorSub(vector_t *u, vector_t *v);
 
 void vectorScalarMul(vector_t *u, double scalar);
 
-double dotProduct(vector_t *u, vector_t *v);
+double dotProduct(vector_t u, vector_t v);
+
+vector_t * crossProduct(vector_t u, vector_t v);
 
 double vectorMagnitude(vector_t u);
 
