@@ -51,7 +51,7 @@ double dotProduct(vector_t u, vector_t v)
 vector_t * crossProduct(vector_t u, vector_t v)
 {
     // Only implemented for 2D & 3D vectors
-    if (u.dimensions != v.dimensions || u.dimensions != 2 || u.dimensions != 3)
+    if (u.dimensions != v.dimensions || u.dimensions != 2 && u.dimensions != 3)
         return 0x0;
 
     vector_t *result = createVector(3);
