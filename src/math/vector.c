@@ -72,10 +72,10 @@ vector_t * crossProduct(vector_t u, vector_t v)
         u1 u2 u3
         v1 v2 v3
 
-        u x v = {(u2*v3-u3*v2)i, (u1*v3-u3*v1)j, (u1*v2-u2*v1)k}
+        u x v = {(u2*v3-u3*v2)i, -(u1*v3-u3*v1)j, (u1*v2-u2*v1)k}
         */
         result->vals[0] = (u.vals[1] * v.vals[2] - u.vals[2] * v.vals[1]);
-        result->vals[1] = (u.vals[0] * v.vals[2] - u.vals[2] * v.vals[0]);
+        result->vals[1] = -1 * (u.vals[0] * v.vals[2] - u.vals[2] * v.vals[0]);
         result->vals[2] = (u.vals[1] * v.vals[1] - u.vals[1] * v.vals[0]);
     }
 
